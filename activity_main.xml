@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.adelelephant.assignmenthygiene.MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:onClick="search_onClick"
+        android:text="Button"
+        android:background="#00cb59"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/etSearch"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="257dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Search"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="64dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rbLocation"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Current Location"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="187dp" />
+
+        <RadioButton
+            android:id="@+id/rbName"
+            android:layout_width="85dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Name"
+            tools:layout_editor_absoluteX="176dp"
+            tools:layout_editor_absoluteY="103dp" />
+
+        <RadioButton
+            android:id="@+id/rbPostcode"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Postcode"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="176dp" />
+
+        <RadioButton
+            android:id="@+id/rbRUpdate"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Recent Update"
+            tools:layout_editor_absoluteX="165dp"
+            tools:layout_editor_absoluteY="184dp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bToGoogle"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/googlemapsicon"
+        android:onClick="googleMap_onClick"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linLayout"
+        android:layout_width="300dp"
+        android:layout_height="290dp"
+        android:layout_marginBottom="92dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" >
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
